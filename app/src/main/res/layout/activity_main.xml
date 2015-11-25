@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Main">
+
+    <com.esri.android.map.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    </com.esri.android.map.MapView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绘制"
+        android:id="@+id/button"
+        android:onClick="btnhzlistener"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="面"
+        android:id="@+id/button2"
+        android:onClick="btnpolygon"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线"
+        android:onClick="btnpolyline"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:id="@+id/button4"
+        android:onClick="bihelistener"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择"
+        android:id="@+id/button5"
+        android:onClick="btnxz"
+        android:layout_above="@+id/button"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="包含"
+        android:onClick="btnbh"
+        android:id="@+id/button6"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相交"
+        android:id="@+id/button7"
+        android:onClick="btnxj"
+        android:layout_above="@+id/button3"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离"
+        android:onClick="distance"
+        android:id="@+id/button8"
+        android:layout_alignTop="@+id/button7"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合并"
+        android:id="@+id/button9"
+        android:onClick="btnhb"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分割"
+        android:onClick="btnfg"
+        android:id="@+id/button10"
+        android:layout_above="@+id/button6"
+        android:layout_toRightOf="@+id/button9"
+        android:layout_toEndOf="@+id/button9"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="纠偏"
+        android:onClick="btnjp"
+        android:id="@+id/button11"
+        android:layout_above="@+id/button6"
+        android:layout_toRightOf="@+id/button6"
+        android:layout_toEndOf="@+id/button6"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交叉"
+        android:id="@+id/button12"
+        android:onClick="btnjc"
+        android:layout_above="@+id/button7"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7"/>
+
+
+</RelativeLayout>
